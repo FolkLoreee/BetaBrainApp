@@ -5,6 +5,7 @@ import logo from "./images/BigBrainTime.png";
 import { StudyForm } from "./components/Study";
 import { RestForm } from "./components/Rest";
 import { TimerClass } from "./components/Timer";
+import {BrainGraph} from "./components/braingraph";
 export let Time = {
   StudyT: 25,
   RestT: 0
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" exact component={StudyForm} />
           <Route path="/rest" exact component={RestForm} />
           <Route path="/studytime" exact component={TimerClass} />
+          <Route path="/graph" exact component={BrainGraph}/>
         </Switch>
       </Router>
     </div>
